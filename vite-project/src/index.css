@@ -1,0 +1,421 @@
+.initial_header {
+  font-size: 80px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "Aldrich";
+}
+
+.initial_forms_container {
+  padding-top: 30px;
+  gap: 10px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Aldrich";
+}
+
+.checkbox_gender {
+  padding-top: 10px;
+  gap: 10px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-family: "Aldrich";
+}
+
+.vaporwave-input {
+  background: linear-gradient(90deg, #952d2d, #7f00ff);
+  border: 2px solid #ff6bff;
+  color: #fff;
+  padding: 10px;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 400px;
+}
+
+.vaporwave-input2 {
+  background: linear-gradient(90deg, #952d2d, #7f00ff);
+  border: 2px solid #ff6bff;
+  color: #fff;
+  padding: 10px;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 100px;
+}
+
+
+.vaporwave-input:focus {
+  outline: none;
+  border-color: #7f00ff;
+  box-shadow: 0 0 10px #7f00ff;
+}
+
+/* Placeholder Styling */
+.vaporwave-input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+
+/* Button Styles */
+.vaporwave-button {
+  background: linear-gradient(90deg, #8000ff, #ab6bff, #ff0505);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vaporwave-surround {
+  background: linear-gradient(90deg, #8000ff, #ab6bff, #ff0505);
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px
+}
+
+
+.vaporwave-button-erase {
+  background: linear-gradient(90deg, #8b0479, #4e048b, #612802);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.vaporwave-button2 {
+  background: linear-gradient(90deg, #868686, #6e6e6e, #525252);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vaporwave-button:hover {
+  background: linear-gradient(90deg, #ff6bff, #7f00ff);
+}
+
+
+.vaporwave-checkbox {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.vaporwave-checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+
+.vaporwave-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #7f00ff;
+  border-radius: 5px;
+}
+
+.vaporwave-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.vaporwave-checkbox input:checked~.checkmark:after {
+  display: block;
+}
+
+.vaporwave-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ff6bff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Vaporwave Checkbox Label */
+.vaporwave-checkbox-label {
+  padding-left: 35px;
+  line-height: 25px;
+}
+
+/* Hover Effect */
+.vaporwave-checkbox:hover .checkmark {
+  background-color: #ff6bff;
+}
+
+/* Checked Effect */
+.vaporwave-checkbox input:checked~.checkmark {
+  background-color: #ff6bff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.flexbox_left {
+  display: flex;
+  flex-direction: column
+}
+
+
+.bottom-left-element {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  /* position the element relative to the viewport */
+  bottom: 70px;
+  /* align the bottom edge of the element with the bottom of the viewport */
+  left: 90px;
+  /* align the left edge of the element with the left of the viewport */
+  background-color: #f0f0f0;
+  /* background color for better visibility */
+  padding: 10px;
+  /* add some padding for better appearance */
+  border: '1px solid black';
+  border-radius: '20px'
+}
+
+.upper-right-element {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  /* position the element relative to the viewport */
+  top: 70px;
+  /* align the bottom edge of the element with the bottom of the viewport */
+  right: 420px;
+  /* align the left edge of the element with the left of the viewport */
+  background-color: #f0f0f0;
+  /* background color for better visibility */
+  padding: 10px;
+  /* add some padding for better appearance */
+  border: '1px solid black';
+  border-radius: '20px'
+}
+
+.upper-right-challenges-title {
+  position: fixed;
+  /* position the element relative to the viewport */
+  top: 70px;
+  /* align the bottom edge of the element with the bottom of the viewport */
+  right: 220px;
+}
+
+
+.upper-right-challenges-tracker-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  /* position the element relative to the viewport */
+  top: 120px;
+  /* align the bottom edge of the element with the bottom of the viewport */
+  right: 220px;
+  /* align the left edge of the element with the left of the viewport */
+  background-color: #f0f0f0;
+  /* background color for better visibility */
+  padding: 10px;
+  /* add some padding for better appearance */
+  border: '1px solid black';
+  border-radius: '20px';
+  gap: 30px;
+}
+
+.upper-right-reponse {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 90px;
+  right: 550px;
+  background-color: rgb(184, 184, 184);
+  padding: 10px;
+  height: 200px;
+  width: 300px;
+  border: '10px solid black';
+  border-radius: 30px;
+  overflow: scroll;
+  text-align: justify;
+}
+
+.beaten {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 678px;
+  top: 220px;
+  z-index: 1;
+  font-size: 80px;
+  font-family: "Aldrich", system-ui;
+}
+
+
+.box-responses {
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  right: 800px;
+  background-color: rgb(240, 240, 240);
+  background: linear-gradient(135deg, #ee7f7f, #ddbbff, #00ffff);
+  padding: 10px;
+  height: 580px;
+  width: 1400px;
+  border: 2px solid #ff6bff;
+  border-radius: 5px;
+  overflow-y: scroll;
+  text-align: justify;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* .box-responses:hover {
+  transform: scale(1.05);
+
+} */
+
+.vaporwave-miami-box-user {
+  color: #000000;
+  background: rgba(255, 255, 255, 0.1);
+  background-color: #e9e9e9;
+  border: 2px solid #0011ff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  width: 50%;
+  margin-left: 650px;
+  font-size: 15px;
+}
+
+.vaporwave-miami-box-ai {
+  color: #000000;
+  background: rgba(255, 255, 255, 0.1);
+  background-color: #e9e9e9;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  margin-right: 350px;
+  width: 50%;
+  font-size: 15px;
+}
+
+
+
+@keyframes borderGradient {
+  0% {
+    border-color: #ff6bff;
+  }
+
+  50% {
+    border-color: #7f00ff;
+  }
+
+  100% {
+    border-color: #00ffff;
+  }
+}
+
+.box-responses {
+  animation: borderGradient 5s linear infinite;
+}
+
+
+
+.press-start-font {
+  font-family: "Aldrich", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.press-start-font2 {
+  display: flex;
+  flex-direction: row;
+  font-family: "Aldrich", system-ui;
+  font-weight: 400;
+  font-size: 25px;
+  font-style: normal;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+
+.press-start-font3 {
+  font-family: "Aldrich", system-ui;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  padding-bottom: 10px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
